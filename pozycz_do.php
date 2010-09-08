@@ -20,7 +20,8 @@ $data =  date('jS \of F Y');
 $zapytanie = "insert into pozyczone (ksiazkaid, znajomyid, data) values ('".$ksiazkaid."','".$znajomyid."','".$data."')";
 $wynik = mysql_query($zapytanie);
 if ($wynik)	echo '<p>'. mysql_affected_rows(). ' WIERSZ DODANO</p>';
-
+$zapytanie = "update ksiazki set pozyczona = 1 where ksiazkaid=".$ksiazkaid."";
+$wynik = mysql_query($zapytanie);
 ?>
 <br /><br />
 <p><a href="http://ksiazki.lisior.pl">POWRÓT</a></p>

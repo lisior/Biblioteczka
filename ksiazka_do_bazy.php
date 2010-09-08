@@ -8,12 +8,13 @@ $tytul = $HTTP_POST_VARS['tytul'];
 $autor = $HTTP_POST_VARS['autor'];
 $wydawnictwo = $HTTP_POST_VARS['wydawnictwo'];
 $isbn = $HTTP_POST_VARS['isbn'];
+$biblionetka = $HTTP_POST_VARS['biblionetka'];
 $autor = addslashes($autor);
 $tytul = addslashes($tytul);
 $wydawnictwo = addslashes($wydawnictwo);
 $isbn = addslashes($isbn);
 lacz_baza();
-$zapytanie = "insert into ksiazki (autor, tytul, wydawnictwo, isbn) values ('".$autor."','".$tytul."','".$wydawnictwo."','".$isbn."')";
+$zapytanie = "insert into ksiazki (autor, tytul, wydawnictwo, isbn,biblionetka) values ('".$autor."','".$tytul."','".$wydawnictwo."','".$isbn."','".$biblionetka."')";
 $wynik = mysql_query($zapytanie);
 if ($wynik)	echo '<p>'. mysql_affected_rows(). ' WIERSZ DODANO</p>';
 ?>

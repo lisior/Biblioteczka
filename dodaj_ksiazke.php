@@ -18,6 +18,9 @@
 	<td>ISBN</td><td><input type="text" name="isbn" size="30" maxlenght="30"></td>
 </tr>
 <tr>
+	<td>Biblionetka</td><td><input type="text" name="biblionetka" size="30" maxlenght="30"></td>
+</tr>
+<tr>
 <td><colspan="2" align="center"><input type="submit" value="Dodaj"></td>
 </tr>
 </table>

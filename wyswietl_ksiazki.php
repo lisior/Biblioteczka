@@ -11,14 +11,23 @@ $ileznalezionych = mysql_numrows($wynik);
 echo '
 <table border=1>
 <tr align=centrer>
-<td>Lp.</td><td>Tytuł</td><td>Autor</td><td>Wydawnictwo</td><td>ISBN</td>
+<td>Lp.</td><td>Tytuł</td><td>Autor</td><td>Wydawnictwo</td><td>ISBN</td><td>POZYCZONA</td><td>BIBLIONETKA</td>
 </tr>';
 for ($i=0; $i<$ileznalezionych; $i++)
 {
 $wiersz = mysql_fetch_array($wynik);
+if ($wiersz[5] == '1')
+{
+$pozyczona = 'TAK';
+}
+else
+{
+$pozyczona = 'NIE';
+}
 echo'
+
 <tr>
-<td>'.$wiersz[0].'</td><td>'.$wiersz[1].'</td><td>'.$wiersz[2].'</td><td>'.$wiersz[3].'</td><td>'.$wiersz[4].'</td>
+<td>'.$wiersz[0].'</td><td>'.$wiersz[1].'</td><td>'.$wiersz[2].'</td><td>'.$wiersz[3].'</td><td>'.$wiersz[4].'</td><td>'.$pozyczona.'</td><td>'.$wiersz[6].'</tr>
 </tr>'  ;
  }
 echo '</table>';

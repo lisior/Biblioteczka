@@ -1,5 +1,6 @@
+ <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
 <html>
-<h1> Wyszukaj książkę </h1>
+<h1> Pożycz książkę </h1>
 <form action="pozycz_do.php" method="post">
 Wybierz książkę, którą chcesz pożyczyć   
 <?
@@ -16,7 +17,7 @@ $wiersz = mysql_fetch_array($wynik);
 echo'<option value = "'.$wiersz[2].'">'.$wiersz[2];
 }	
 echo '</select><br />';
-echo '<br /> Wybierz znajomego, któremu pożyczasz książkę: '.$wiersz[2].'   ';
+echo '<br /> Wybierz znajomego, któremu pożyczasz książkę: ';
 
 $zapytanie = "select * from znajomi";
 $wynik = mysql_query($zapytanie);
