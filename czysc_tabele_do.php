@@ -8,4 +8,4 @@ $zapytanie = "ALTER TABLE `ksiazki` PACK_KEYS =1 CHECKSUM =1 DELAY_KEY_WRITE =1 
 $wynik = mysql_query($zapytanie);
 ?>
 <br /><br />
-<p><a href="http://ksiazki.lisior.pl">POWRÓT</a></p>
+<p><a href="http://ksiazki.lisior.pl">POWRÃ“T</a></p>

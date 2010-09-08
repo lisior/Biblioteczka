@@ -1,5 +1,5 @@
 <html>
-<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-2">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <body>
 <h1>Lista znajomych</h1>
 <?php
@@ -24,6 +24,6 @@ echo'
 echo '</table>';
 ?>
 <br /><br />
-<p><a href="http://ksiazki.lisior.pl">POWRÓT</a></p>
+<p><a href="http://ksiazki.lisior.pl">POWRĂT</a></p>
 </body>
 </html>

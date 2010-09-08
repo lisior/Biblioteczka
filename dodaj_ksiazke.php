@@ -1,12 +1,12 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/1998/REC-html40-19980424/loose.dtd">
 <html>
-<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-2">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <body>
 <form action="ksiazka_do_bazy.php" method=post>
-<h1>Dodawanie książki do bazy danych</h1>
+<h1>Dodawanie ksiÄĹźki do bazy danych</h1>
 <table>
 <tr>
-	<td>Tytuł</td><td><input type="text" name="tytul" size="30" maxlenght="30"></td>
+	<td>TytuĹ</td><td><input type="text" name="tytul" size="30" maxlenght="30"></td>
 </tr>
 <tr>
 	<td>Autor</td><td><input type="text" name="autor" size="30" maxlenght="30"></td>
@@ -23,6 +23,6 @@
 </table>
 
 <br /><br />
-<p><a href="http://ksiazki.lisior.pl">POWRÓT</a></p>
+<p><a href="http://ksiazki.lisior.pl">POWRĂT</a></p>
 </body>
 </html>

@@ -1,7 +1,7 @@
 <html>
-<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-2">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <body>
-<h1>Lista pożyczonych książek</h1>
+<h1>Lista poĹźyczonych ksiÄĹźek</h1>
 <?php
 require 'lacz_baza.php';
 lacz_baza();
@@ -11,7 +11,7 @@ $ileznalezionych = mysql_numrows($wynik);
 echo'
 <table border=1>
 <tr>
-<td>ID</td><td>Tytuł pożyczanej książki</td><td>Autor pożyczonej książki</td><td>Imie pożyczającego</td><td>Ksywa pożyczającego</td><td> Data pożyczenia </td>
+<td>ID</td><td>TytuĹ poĹźyczanej ksiÄĹźki</td><td>Autor poĹźyczonej ksiÄĹźki</td><td>Imie poĹźyczajÄcego</td><td>Ksywa poĹźyczajÄcego</td><td> Data poĹźyczenia </td>
 </tr>';
 $idw=0;
 for ($i=0; $i<$ileznalezionych; $i++)
@@ -28,7 +28,7 @@ $ile2 = mysql_numrows($wynik2);
 for ($c=0; $c<$ile2; $c++)
 {
 $wiersz2 = mysql_fetch_array($wynik2);
-$tytuł = $wiersz2[1];
+$tytuĹ = $wiersz2[1];
 $autor = $wiersz2[2];
 $wydawnictwo = $wiersz2[3];
 $isdn = $wiersz2[4];
@@ -47,13 +47,13 @@ $ksywa = $wiersz3[2];
 $idw = $idw + 1;
 echo  '
 <tr>
-<td>'.$idw.'</td><td>'.$tytuł.'</td><td>'.$autor.'</td><td>'.$imie.'</td><td>'.$ksywa.'</td><td>'.$data.'</td>
+<td>'.$idw.'</td><td>'.$tytuĹ.'</td><td>'.$autor.'</td><td>'.$imie.'</td><td>'.$ksywa.'</td><td>'.$data.'</td>
 </tr>';
 
 }
 echo '</table>';
 ?>
 <br /><br />
-<p><a href="http://ksiazki.lisior.pl">POWRÓT</a></p>
+<p><a href="http://ksiazki.lisior.pl">POWRĂT</a></p>
 </body>
 </html>

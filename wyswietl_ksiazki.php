@@ -1,7 +1,7 @@
 <html>
-<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-2">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <body>
-<h1>Lista książek</h1>
+<h1>Lista ksiÄĹźek</h1>
 <?php
 require 'lacz_baza.php';
 lacz_baza();
@@ -11,7 +11,7 @@ $ileznalezionych = mysql_numrows($wynik);
 echo '
 <table border=1>
 <tr align=centrer>
-<td>Lp.</td><td>Tytuł</td><td>Autor</td><td>Wydawnictwo</td><td>ISBN</td>
+<td>Lp.</td><td>TytuĹ</td><td>Autor</td><td>Wydawnictwo</td><td>ISBN</td>
 </tr>';
 for ($i=0; $i<$ileznalezionych; $i++)
 {
@@ -24,6 +24,6 @@ echo'
 echo '</table>';
 ?>
 <br /><br />
-<p><a href="http://ksiazki.lisior.pl">POWRÓT</a></p>
+<p><a href="http://ksiazki.lisior.pl">POWRĂT</a></p>
 </body>
 </html>

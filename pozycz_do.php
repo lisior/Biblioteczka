@@ -1,7 +1,7 @@
 <html>
-<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-2">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <body>
-<h1>Dodawanie książki do bazy danych</h1>
+<h1>Dodawanie ksiÄĹźki do bazy danych</h1>
 <?php
 require 'lacz_baza.php';
 $ksiazka = $HTTP_POST_VARS['ksiazka'];
@@ -23,7 +23,7 @@ if ($wynik)	echo '<p>'. mysql_affected_rows(). ' WIERSZ DODANO</p>';
 
 ?>
 <br /><br />
-<p><a href="http://ksiazki.lisior.pl">POWRÓT</a></p>
+<p><a href="http://ksiazki.lisior.pl">POWRĂT</a></p>
 <br /><br />
 </body>
 </html>

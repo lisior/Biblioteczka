@@ -1,7 +1,7 @@
 <html>
-<h1> Wyszukaj ksi±¿kê </h1>
+<h1> Wyszukaj ksiÄ…Å¼kÄ™ </h1>
 <form action="pozycz_do.php" method="post">
-Wybierz ksi±¿kê, któr± chcesz po¿yczyæ   
+Wybierz ksiÄ…Å¼kÄ™, ktÃ³rÄ… chcesz poÅ¼yczyÄ‡   
 <?
 require 'lacz_baza.php';
 lacz_baza();
@@ -9,14 +9,14 @@ $zapytanie = "select * from ksiazki";
 $wynik = mysql_query($zapytanie);
 $ile = mysql_numrows($wynik);
 echo'<select name="ksiazka">';
-echo'<option value = "ksiazka">Wybierz ksi±¿kê';
+echo'<option value = "ksiazka">Wybierz ksiÄ…Å¼kÄ™';
 	for ($i=0; $i<$ile; $i++)
 {
 $wiersz = mysql_fetch_array($wynik);
 echo'<option value = "'.$wiersz[2].'">'.$wiersz[2];
 }	
 echo '</select><br />';
-echo '<br /> Wybierz znajomego, któremu po¿yczasz ksi±¿kê: '.$wiersz[2].'   ';
+echo '<br /> Wybierz znajomego, ktÃ³remu poÅ¼yczasz ksiÄ…Å¼kÄ™: '.$wiersz[2].'   ';
 
 $zapytanie = "select * from znajomi";
 $wynik = mysql_query($zapytanie);
@@ -33,6 +33,6 @@ echo '</select>';
 echo'<br /><br /><br />';
 ?>
 
-<input type="submit" value="Po¿ycz">
+<input type="submit" value="PoÅ¼ycz">
 </form>
 </html>

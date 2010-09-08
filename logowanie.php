@@ -16,7 +16,7 @@ if (substr($SERVER_SOFTWARE, 0 ,9) == 'Micorsoft' &&
 	else 
 	header('HTTP/1.0 401 Unauthorized');
 	
-	echo '<h1> Brak uprawnieñ!!</h1>';
+	echo '<h1> Brak uprawnieÅ„!!</h1>';
 	}
 	else
 	{

@@ -4,7 +4,7 @@ function lacz_baza()
 @ $db = mysql_pconnect('###','###','###');
 if (!$db)
 {
-echo 'B£•D!!!';
+echo 'B≈ÅƒÑD!!!';
 exit;
 }
 //echo '<p>BAZA OTWARTA</p>';
