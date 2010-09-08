@@ -16,7 +16,7 @@ $wiersz = mysql_fetch_array($wynik);
 echo'<option value = "'.$wiersz[2].'">'.$wiersz[2];
 }	
 echo '</select><br />';
-echo '<br /> Wybierz znajomego, któremy po¿yczasz ksi±¿kê: '.$wiersz[2].'   ';
+echo '<br /> Wybierz znajomego, któremu po¿yczasz ksi±¿kê: '.$wiersz[2].'   ';
 
 $zapytanie = "select * from znajomi";
 $wynik = mysql_query($zapytanie);
@@ -33,6 +33,6 @@ echo '</select>';
 echo'<br /><br /><br />';
 ?>
 
-<input type="submit" value="Po¿ycz>
+<input type="submit" value="Po¿ycz">
 </form>
 </html>
