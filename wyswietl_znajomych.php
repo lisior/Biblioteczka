@@ -11,7 +11,7 @@ $ileznalezionych = mysql_numrows($wynik);
 echo '
 <table border=1>
 <tr align=centrer>
-<td>Lp.</td><td>Imie</td><td>Ksywa</td><td>Miasto</td>
+<th>Lp.</th><th>Imie</th><th>Ksywa</th><th>Miasto</th>
 </tr>';
 for ($i=0; $i<$ileznalezionych; $i++)
 {

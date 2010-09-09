@@ -11,7 +11,7 @@ $ileznalezionych = mysql_numrows($wynik);
 echo'
 <table border=1>
 <tr>
-<td>ID</td><td>Tytuł pożyczanej książki</td><td>Autor pożyczonej książki</td><td>Imie pożyczającego</td><td>Ksywa pożyczającego</td><td> Data pożyczenia </td>
+<th>ID</th><th>Tytuł pożyczanej książki</th><th>Autor pożyczonej książki</th><th>Imię pożyczającego</th><th>Ksywa pożyczającego</th><th>Data pożyczenia</th>
 </tr>';
 $idw=0;
 for ($i=0; $i<$ileznalezionych; $i++)

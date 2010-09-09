@@ -12,7 +12,7 @@ $ileznalezionych = mysql_numrows($wynik);
 echo '
 <table border=1>
 <tr>
-<td>Lp.</td><td>Tytuł</td><td>Autor</td><td>Wydawnictwo</td><td>ISBN</td><td>POZYCZONA</td><td>BIBLIONETKA</td>
+<th>Lp.</th><th>Tytuł</th><th>Autor</th><th>Wydawnictwo</th><th>ISBN</th><th>POŻYCZONA</th><th>BIBLIONETKA</th>
 </tr>';
 for ($i=0; $i<$ileznalezionych; $i++)
 {
