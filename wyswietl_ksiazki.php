@@ -36,7 +36,7 @@ $link = '<a href="'.$adres.'" target="_blank">www.biblionetka.pl</a>';
 }
 echo'
 <tr>
-<td>'.$wiersz[0].'</td><td>'.$wiersz[1].'</td><td>'.$wiersz[2].'</td><td>'.$wiersz[3].'</td><td>'.$wiersz[4].'</td><td>'.$pozyczona.'</td><td>'.$link.'</td><td><a href="http://ksiazki.lisior.pl/edytuj.php?id='.$wiersz[0].'"><input type="submit" value="Edytuj"></a></td></tr>
+<td>'.$wiersz[0].'</td><td>'.$wiersz[1].'</td><td>'.$wiersz[2].'</td><td>'.$wiersz[3].'</td><td>'.$wiersz[4].'</td><td>'.$pozyczona.'</td><td>'.$link.'</td><td><a href="edytuj_ksiazke_form.php?id='.$wiersz[0].'"><input type="submit" value="Edytuj"></a></td></tr>
 </tr>';
  }
 echo '</table>';
