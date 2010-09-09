@@ -1,7 +1,7 @@
 <html>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <body>
-<h1>Edycja książki w bazie danych</h1>
+<h1>Edycja znajomego w bazie danych</h1>
 <?php
 require 'lacz_baza.php';
 $id = $HTTP_POST_VARS['id'];
