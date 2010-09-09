@@ -26,6 +26,6 @@
 </table>
 
 <br /><br />
-<p><a href="http://ksiazki.lisior.pl">POWRÓT</a></p>
+<p><a href="index.php">POWRÓT</a></p>
 </body>
 </html>

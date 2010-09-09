@@ -20,7 +20,7 @@ if ($wynik)	echo '<p>'. mysql_affected_rows(). ' WIERSZ DODANO</p>';
 ?>
 
 <br /><br />
-<p><a href="http://ksiazki.lisior.pl">POWRÓT</a></p>
+<p><a href="index.php">POWRÓT</a></p>
 <br /><br />
 </body>
 </html>
