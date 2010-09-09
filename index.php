@@ -12,7 +12,7 @@
 
 <table border=1 align = "center">
 <tr align = "center">
-<td> KSIĄŻKI </td><td> ZNAJOMI </td><td> POŻYCZ </td>
+<th>KSIĄŻKI</th><th>ZNAJOMI</th><th>POŻYCZ</th>
 </tr>
 <tr>
 <td><a href="dodaj_ksiazke.php">Dodaj książkę</a></td><td><a href="dodaj_znajomego.php">Dodaj znajomego</a></td><td><a href="pozycz_form.php">Pożycz książkę</a></td>
