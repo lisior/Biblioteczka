@@ -6,7 +6,7 @@ Wybierz książkę, którą chcesz pożyczyć
 <?
 require 'lacz_baza.php';
 lacz_baza();
-$zapytanie = "select * from ksiazki";
+$zapytanie = "select * from ksiazki where pozyczona = 0";
 $wynik = mysql_query($zapytanie);
 $ile = mysql_numrows($wynik);
 echo'<select name="ksiazka">';

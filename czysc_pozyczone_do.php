@@ -6,6 +6,9 @@ $wynik = mysql_query($zapytanie);
 
 $zapytanie = "ALTER TABLE `pozyczone` PACK_KEYS =1 CHECKSUM =1 DELAY_KEY_WRITE =1 AUTO_INCREMENT =1";
 $wynik = mysql_query($zapytanie);
+
+$zapytanie = "update ksiazki set pozyczona = 0";
+$wynik = mysql_query($zapytanie);
 ?>
 <br /><br />
 <p><a href="http://ksiazki.lisior.pl">POWRÓT</a></p>

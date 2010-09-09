@@ -8,10 +8,14 @@ $ksiazka = $HTTP_POST_VARS['ksiazka'];
 $znajomy = $HTTP_POST_VARS['znajomy'];
 
 lacz_baza();
-$zapytanie = "select ksiazkaid from ksiazki where tytul = '".$ksiazka."'";
+$zapytanie = "select ksiazkaid,pozyczona from ksiazki where tytul = '".$ksiazka."'";
 $wynik = mysql_query($zapytanie);
 $wiersz = mysql_fetch_array($wynik);
 $ksiazkaid = $wiersz[0];
+$pozyczona = $wiersz[1];
+//echo $pozyczona;
+if ($pozyczona == '0')
+{
 $zapytanie = "select znajomyid from znajomi where ksywa = '".$znajomy."'";
 $wynik = mysql_query($zapytanie);
 $wiersz = mysql_fetch_array($wynik);
@@ -22,6 +26,11 @@ $wynik = mysql_query($zapytanie);
 if ($wynik)	echo '<p>'. mysql_affected_rows(). ' WIERSZ DODANO</p>';
 $zapytanie = "update ksiazki set pozyczona = 1 where ksiazkaid=".$ksiazkaid."";
 $wynik = mysql_query($zapytanie);
+}
+else
+{
+echo 'Książka jest już wypożyczona !!!';
+}
 ?>
 <br /><br />
 <p><a href="http://ksiazki.lisior.pl">POWRÓT</a></p>

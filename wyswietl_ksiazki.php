@@ -2,6 +2,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <body>
 <h1>Lista książek</h1>
+
 <?php
 require 'lacz_baza.php';
 lacz_baza();
@@ -10,7 +11,7 @@ $wynik = mysql_query($zapytanie);
 $ileznalezionych = mysql_numrows($wynik);
 echo '
 <table border=1>
-<tr align=centrer>
+<tr>
 <td>Lp.</td><td>Tytuł</td><td>Autor</td><td>Wydawnictwo</td><td>ISBN</td><td>POZYCZONA</td><td>BIBLIONETKA</td>
 </tr>';
 for ($i=0; $i<$ileznalezionych; $i++)
@@ -24,11 +25,19 @@ else
 {
 $pozyczona = 'NIE';
 }
+if ($wiersz[6] == '0')
+{
+$link = 'Brak odnośnika do BIBLIONETKI';
+}
+else
+{
+$adres = 'http://www.biblionetka.pl/book.aspx?id='.$wiersz[6];
+$link = '<a href="'.$adres.'" target="_blank">www.biblionetka.pl</a>';
+}
 echo'
-
 <tr>
-<td>'.$wiersz[0].'</td><td>'.$wiersz[1].'</td><td>'.$wiersz[2].'</td><td>'.$wiersz[3].'</td><td>'.$wiersz[4].'</td><td>'.$pozyczona.'</td><td>'.$wiersz[6].'</tr>
-</tr>'  ;
+<td>'.$wiersz[0].'</td><td>'.$wiersz[1].'</td><td>'.$wiersz[2].'</td><td>'.$wiersz[3].'</td><td>'.$wiersz[4].'</td><td>'.$pozyczona.'</td><td>'.$link.'</tr>
+</tr>';
  }
 echo '</table>';
 ?>
