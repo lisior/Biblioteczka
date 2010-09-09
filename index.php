@@ -20,7 +20,7 @@
 <td><a href="wyswietl_ksiazki.php">Wyświetl książki</a></td><td><a href="wyswietl_znajomych.php">Wyświetl znajomych</a></td><td><a href="wyswietl_pozyczone.php">Wyświetl listę pożyczonych</td>
 </tr>
 <tr>
-<td>&nbsp;</td><td><a href="edytuj_znajomego_form.php">Edytuj znajomego</a</td><td><a href="zwroc_ksiazke_form.php"> Zwrot książki </a></td>
+<td>&nbsp;</td><td>&nbsp;</td><td><a href="zwroc_ksiazke_form.php"> Zwrot książki </a></td>
 </tr>
 
 </table>
