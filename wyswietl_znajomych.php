@@ -18,7 +18,7 @@ for ($i=0; $i<$ileznalezionych; $i++)
 $wiersz = mysql_fetch_array($wynik);
 echo'
 <tr>
-<td>'.$wiersz[0].'</td><td>'.$wiersz[1].'</td><td>'.$wiersz[2].'</td><td>'.$wiersz[3].'</td><td><a href="http://ksiazki.lisior.pl/edytuj_znajomych.php?id='.$wiersz[0].'"><input type="submit" value="Edytuj"></a></td>
+<td>'.$wiersz[0].'</td><td>'.$wiersz[1].'</td><td>'.$wiersz[2].'</td><td>'.$wiersz[3].'</td><td><a href="http://ksiazki.lisior.pl/edytuj_znajomych_form.php?id='.$wiersz[0].'"><input type="submit" value="Edytuj"></a></td>
 </tr>'  ;
  }
 echo '</table>';
