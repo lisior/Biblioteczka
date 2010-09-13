@@ -1,6 +1,9 @@
+<?php
+require 'check.php';
+?>
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/1998/REC-html40-19980424/loose.dtd">
 <html>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
 <body>
 <form action="ksiazka_do_bazy.php" method=post>
 <h1>Dodawanie książki do bazy danych</h1>

@@ -1,3 +1,6 @@
+<?php
+require 'check.php';
+?>
 <html>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <body>
@@ -14,7 +17,7 @@ $tytul = addslashes($tytul);
 $wydawnictwo = addslashes($wydawnictwo);
 $isbn = addslashes($isbn);
 lacz_baza();
-$zapytanie = "insert into ksiazki (autor, tytul, wydawnictwo, isbn,biblionetka) values ('".$autor."','".$tytul."','".$wydawnictwo."','".$isbn."','".$biblionetka."')";
+$zapytanie = "insert into ksiazki (autor, tytul, wydawnictwo, isbn,biblionetka,userid) values ('".$autor."','".$tytul."','".$wydawnictwo."','".$isbn."','".$biblionetka."','".$_SESSION["iduser"]."')";
 $wynik = mysql_query($zapytanie);
 if ($wynik)	echo '<p>'. mysql_affected_rows(). ' WIERSZ DODANO</p>';
 ?>

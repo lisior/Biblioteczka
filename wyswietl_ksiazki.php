@@ -12,7 +12,7 @@ $ileznalezionych = mysql_numrows($wynik);
 echo '
 <table border=1>
 <tr>
-<th>Lp.</th><th>Tytuł</th><th>Autor</th><th>Wydawnictwo</th><th>ISBN</th><th>POŻYCZONA</th><th>BIBLIONETKA</th>
+<th>Lp.</th><th>Tytuł</th><th>Autor</th><th>Wydawnictwo</th><th>ISBN</th><th>POŻYCZONA</th><th>BIBLIONETKA</th><th>DODAŁ</th>
 </tr>';
 for ($i=0; $i<$ileznalezionych; $i++)
 {
@@ -34,9 +34,10 @@ else
 $adres = 'http://www.biblionetka.pl/book.aspx?id='.$wiersz[6];
 $link = '<a href="'.$adres.'" target="_blank">www.biblionetka.pl</a>';
 }
+$user = mysql_fetch_array(mysql_query("select user_login from users where user_id = '".$wiersz[7]."'"));
 echo'
 <tr>
-<td>'.$wiersz[0].'</td><td>'.$wiersz[1].'</td><td>'.$wiersz[2].'</td><td>'.$wiersz[3].'</td><td>'.$wiersz[4].'</td><td>'.$pozyczona.'</td><td>'.$link.'</td><td><a href="edytuj_ksiazke_form.php?id='.$wiersz[0].'"><input type="submit" value="Edytuj"></a></td></tr>
+<td>'.$wiersz[0].'</td><td>'.$wiersz[1].'</td><td>'.$wiersz[2].'</td><td>'.$wiersz[3].'</td><td>'.$wiersz[4].'</td><td>'.$pozyczona.'</td><td>'.$link.'</td><td>'.$user[0].'</td><td><a href="edytuj_ksiazke_form.php?id='.$wiersz[0].'"><input type="submit" value="Edytuj"></a></td></tr>
 </tr>';
  }
 echo '</table>';
