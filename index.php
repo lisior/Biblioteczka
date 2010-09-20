@@ -1,7 +1,7 @@
 <?php
 session_start();
 session_register("zalogowany");
-
+echo '<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="pl" lang="pl">';
 if(empty($_SESSION["zalogowany"]))$_SESSION["zalogowany"]=0;
 require 'baza.php';
 mysql_connect($host, $user, $passwd)or die("Nie można nawiązać połączenia z bazą");
@@ -21,7 +21,7 @@ function ShowLogin($komunikat=""){
 <!DOCTYPE html 
 	PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
 	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="pl" lang="pl">
+
 <head>
 	<title>Strona główna</title>
 </head>
