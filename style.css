@@ -1,0 +1,38 @@
+body {
+  background-color: #1f1f1f;
+  background-image: url("/img/logo.gif");
+  background-repeat: no-repeat;
+  background-position: top right;
+  font-family: Courier New; font-weight: bold;
+  color: #ffb500;
+  }
+h1 {
+	color: #ffb500;
+}
+div{
+	color: #ffffff;
+	}
+	table{
+	font-family: Courier New; font-weight: bold;
+	color: #ffb500;
+	}	
+
+p{
+color:#ffffff;
+}
+p2{
+color: #ffb500;
+}
+
+a { 
+text-decoration: none;
+background-color: #1f1f1f;
+color: #ff0000;
+ }
+
+input {
+font-family: Courier New; font-weight: bold; color: #ffb500; font-size: 9pt; background-color: #1f1f1f; border: 1 solid #C0C0C0}
+
+select {
+font-family: Courier New; font-weight: bold; color: #ffb500; font-size: 9pt; background-color: #1f1f1f; border: 1 solid #C0C0C0}
+  

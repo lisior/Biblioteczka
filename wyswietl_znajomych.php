@@ -1,5 +1,9 @@
 <html>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<head>
+    <title>Lista znajomych</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
 <body>
 <h1>Lista znajomych</h1>
 <?php

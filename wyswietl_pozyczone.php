@@ -1,6 +1,12 @@
 <html>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+ <head>
+    <title>Lista pożyczonych książek</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
 <body>
+<br>
+<br>
 <h1>Lista pożyczonych książek</h1>
 <?php
 require 'lacz_baza.php';
@@ -28,6 +34,7 @@ $ile2 = mysql_numrows($wynik2);
 for ($c=0; $c<$ile2; $c++)
 {
 $wiersz2 = mysql_fetch_array($wynik2);
+$idksiazki = $wiersz2[0];
 $tytuł = $wiersz2[1];
 $autor = $wiersz2[2];
 $wydawnictwo = $wiersz2[3];
@@ -47,7 +54,7 @@ $ksywa = $wiersz3[2];
 $idw = $idw + 1;
 echo  '
 <tr>
-<td>'.$idw.'</td><td>'.$tytuł.'</td><td>'.$autor.'</td><td>'.$imie.'</td><td>'.$ksywa.'</td><td>'.$data.'</td>
+<td>'.$idw.'</td><td>'.$tytuł.'</td><td>'.$autor.'</td><td>'.$imie.'</td><td>'.$ksywa.'</td><td>'.$data.'</td><td><a href="zwrot.php?id='.$idksiazki.'"><input type="submit" value="Zwrot"></a></td>
 </tr>';
 
 }

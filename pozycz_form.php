@@ -1,5 +1,12 @@
- <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+<?php
+require 'check.php';
+?>
 <html>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+<head>
+    <title>Biblioteczka</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
 <h1> Pożycz książkę </h1>
 <form action="pozycz_do.php" method="post">
 Wybierz książkę, którą chcesz pożyczyć   
@@ -35,5 +42,8 @@ echo'<br /><br /><br />';
 ?>
 
 <input type="submit" value="Pożycz">
+<br>
+<br>
+<p><a href="index.php">POWRÓT</a></p>
 </form>
 </html>

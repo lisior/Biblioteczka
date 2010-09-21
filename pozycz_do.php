@@ -1,5 +1,8 @@
 <html>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<head>
+<link rel="stylesheet" type="text/css" href="style.css" />
+</head>
 <body>
 <h1>Dodawanie książki do bazy danych</h1>
 <?php

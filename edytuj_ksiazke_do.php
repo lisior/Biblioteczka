@@ -1,6 +1,12 @@
 <html>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<head>
+    <title>Lista książek</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+	</head>
 <body>
+<br>
+<br>
 <h1>Edycja książki w bazie danych</h1>
 <?php
 require 'lacz_baza.php';

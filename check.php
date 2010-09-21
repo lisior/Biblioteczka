@@ -8,6 +8,7 @@ session_start();
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <head>
 	<title>podstrona</title>
+	<link rel="stylesheet" type="text/css" href="style.css" />
 </head>
 <body>
 <?php

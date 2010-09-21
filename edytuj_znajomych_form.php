@@ -27,3 +27,6 @@ echo '
 
 ?>
 <input type="submit" value="OK">
+<br>
+<br>
+<p><a href="index.php">POWRÓT</a></p>
